@@ -1,0 +1,9 @@
+.memory-item, .memory-change { padding: 16px 0; border-bottom: 1px solid rgba(176,210,183,.15); }
+.memory-item > p, .memory-change > p { margin: 0 0 10px; line-height: 1.7; overflow-wrap: anywhere; }
+.memory-meta { color: var(--muted, #a5baad); font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
+.memory-item details, .memory-changes { margin: 12px 0; }
+.memory-item summary, .memory-changes > summary { cursor: pointer; min-height: 36px; line-height: 1.6; }
+.memory-edit-text { width: 100%; box-sizing: border-box; margin: 14px 0; padding: 14px; border: 1px solid rgba(176,210,183,.28); border-radius: 14px; background: rgba(0,0,0,.12); color: inherit; font: inherit; resize: vertical; line-height: 1.7; }
+.memory-item .settings-actions { gap: 12px; margin-top: 10px; }
+.memory-item button, .memory-change button { min-height: 44px; }
+.memory-receipt { margin-top: 10px; }

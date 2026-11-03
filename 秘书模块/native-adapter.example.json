@@ -1,0 +1,9 @@
+{
+  "protocol_version": 1,
+  "enabled": false,
+  "adapter_id": null,
+  "verified_devices": [],
+  "capabilities": [],
+  "status": "native_adapter_not_implemented_or_phone_verified",
+  "credentials": "provided_by_host_authorized_channel_never_in_url"
+}

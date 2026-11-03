@@ -1,0 +1,5 @@
+.feature-panel label{display:block;margin:14px 0;color:var(--text,#e2eae6)}
+.feature-panel input,.feature-panel select{display:block;width:100%;box-sizing:border-box;margin-top:6px;padding:12px;border:1px solid var(--line,#40534a);border-radius:12px;background:var(--surface,#15241e);color:var(--text,#e2eae6);font:inherit}
+.feature-panel .secondary-button{margin:8px 8px 8px 0}
+.feature-panel h3{margin-top:26px}
+.feature-panel p{overflow-wrap:anywhere}

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "cpython-3.13.18+20261026-aarch64-apple-darwin-install_only.tar.gz",
+    "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261026/cpython-3.13.18%2B20261026-aarch64-apple-darwin-install_only.tar.gz",
+    "size": 25394044,
+    "sha256": "e5af2fde6a937a0e0c795a0c595c4efb70578d57463a2657c819992b9b9acbac"
+  },
+  {
+    "name": "node-v22.23.1-darwin-arm64.tar.gz",
+    "url": "https://nodejs.org/download/release/v22.23.1/node-v22.23.1-darwin-arm64.tar.gz",
+    "sha256": "ef28d8fab2c0e4314522d4bb1b7173270aa3937e93b92cb7de79c112ac1fa953"
+  }
+]

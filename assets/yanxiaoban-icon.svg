@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <!-- Project-authored geometric pi symbol, GPL-3.0-only. No font or external artwork. -->
+  <rect width="180" height="180" fill="#15352c"/>
+  <g fill="none" stroke="#c9f5d8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M43 57 H137 M64 57 V125 Q64 139 52 139 M116 57 V125 Q116 139 130 139"/>
+  </g>
+</svg>

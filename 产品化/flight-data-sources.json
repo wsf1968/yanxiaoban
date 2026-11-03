@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "provider": "Juhe 818",
+  "usage": "Provider reference data for local builds; not licensed under the project GPL and not redistributed in the source repository. No paid flight API request.",
+  "retrieved_on": "2026-11-03",
+  "files": [
+    {
+      "table": "airport",
+      "name": "IATA.xlsx",
+      "url": "https://juhe.oss-cn-hangzhou.aliyuncs.com/api_file/818/IATA.xlsx",
+      "sha256": "2ce047da5605b458529c3da8124b32e6455f6a88974413814f710995b44abae8",
+      "size": 118031,
+      "headers": [
+        "机场三字码",
+        "机场名称"
+      ],
+      "rows": 4168
+    },
+    {
+      "table": "city",
+      "name": "cities-IATA.xlsx",
+      "url": "https://juhe.oss-cn-hangzhou.aliyuncs.com/api_file/818/cities-IATA.xlsx",
+      "sha256": "3b2557ae3ffa6e09567644af7f781b6e08cfb707807f9030a2d2b5abed7e6512",
+      "size": 230838,
+      "headers": [
+        "code",
+        "chineseName"
+      ],
+      "rows": 8728
+    }
+  ],
+  "converted_sha256": "38ce8430e97f198dea7b4e49ae7622b5cee066b4d9b93ecb5c4a0140671917b9"
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101918">
+  <meta name="apple-mobile-web-app-title" content="言小办">
+  <link rel="apple-touch-icon" sizes="180x180" href="yanxiaoban-touch.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="yanxiaoban-favicon.png">
+  <title>言小办 · 开源个人语音助手</title>
+  <link rel="stylesheet" href="home-style-v0441.css?v=commerce-fix-20261021">
+  <link rel="stylesheet" href="home-glass-v041.css">
+  <link rel="stylesheet" href="home-motion-v047.css?v=face-20261021">
+  <link rel="stylesheet" href="memory-v1.css?v=20261021">
+  <link rel="stylesheet" href="features-v1.css?v=20261027">
+  <link rel="stylesheet" href="presentation-v1.css?v=20261027">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="15" rx="4"/><path d="M5 11h14M12 3v8M8 18l-2 3m10-3 2 3M8 14h1m6 0h1"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Zm3 0V6a4 4 0 0 1 8 0v1"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M6 9h.1m3.9 0h.1m3.9 0h.1m3.9 0h.1M6 12h.1m3.9 0h.1m3.9 0h.1m3.9 0h.1M7 16h10"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6m3-3v6l4 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+  </svg>
+
+  <div class="page-shell">
+    <header class="topbar">
+      <a href="#" class="brand" aria-label="言小办首页">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M10 30V13h10a8.5 8.5 0 0 1 0 17H17V13M8 9h21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>言小办<span class="brand-sub">你的私人助手</span></span>
+      </a>
+      <div class="top-actions"><span class="preview-label" id="connection-state">正在连接</span><button class="icon-button" id="about-button" aria-label="更多与设置"><svg><use href="#i-more"/></svg></button></div>
+    </header>
+
+    <section class="welcome" aria-labelledby="greeting">
+      <div><p class="eyebrow"><span class="tiny-dot"></span> 随时，为你</p><h1 id="greeting">你好，我在<span class="mint">。</span></h1><p class="welcome-caption">想做什么，直接说。值得留下的，都在这里。</p></div>
+      <div class="presence" aria-hidden="true">
+        <svg class="pi-avatar" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="pi-jade" cx="32%" cy="24%" r="82%"><stop stop-color="#bbebb3"/><stop offset=".29" stop-color="#75b58e"/><stop offset=".65" stop-color="#355f4c"/><stop offset=".89" stop-color="#214539"/><stop offset="1" stop-color="#679a7f"/></radialGradient>
+            <radialGradient id="pi-sheen" cx="34%" cy="18%" r="75%"><stop stop-color="#efffdc" stop-opacity=".62"/><stop offset=".42" stop-color="#d8ffd0" stop-opacity=".08"/><stop offset="1" stop-color="#d8ffd0" stop-opacity="0"/></radialGradient>
+            <radialGradient id="pi-aura"><stop stop-color="#a0dfaf" stop-opacity=".13"/><stop offset="1" stop-color="#a0dfaf" stop-opacity="0"/></radialGradient>
+            <linearGradient id="pi-rim" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efffdb" stop-opacity=".8"/><stop offset=".5" stop-color="#d1f5d7" stop-opacity=".15"/><stop offset="1" stop-color="#a6e2c4" stop-opacity=".6"/></linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="79" fill="url(#pi-aura)"/>
+          <ellipse class="avatar-shadow" cx="80" cy="139" rx="34" ry="5" fill="#000" opacity=".2"/>
+          <g class="avatar-body">
+            <circle cx="80" cy="77" r="55" fill="url(#pi-jade)" stroke="url(#pi-rim)" stroke-width="1.5"/>
+            <circle cx="80" cy="77" r="53" fill="url(#pi-sheen)"/>
+            <path d="M44 48 Q61 28 85 32" fill="none" stroke="#f1ffdf" stroke-opacity=".22" stroke-width="3" stroke-linecap="round"/>
+            <path d="M111 108 Q98 123 76 123" fill="none" stroke="#a6ecc8" stroke-opacity=".14" stroke-width="2" stroke-linecap="round"/>
+            <g class="avatar-face">
+              <g class="avatar-eyes">
+                <g class="avatar-open-eyes"><rect class="avatar-eye" x="57" y="62" width="12" height="22" rx="6"/><rect class="avatar-eye" x="91" y="62" width="12" height="22" rx="6"/></g>
+                <g class="avatar-happy-eyes" fill="none" stroke="#ecffe6" stroke-width="5" stroke-linecap="round"><path d="M56 75 Q63 62 70 75"/><path d="M90 75 Q97 62 104 75"/></g>
+              </g>
+              <path class="avatar-mouth avatar-idle-mouth" d="M70 95 Q80 104 90 95"/>
+              <g class="avatar-speaking-mouth"><ellipse class="avatar-talking-shape" cx="80" cy="96" rx="9" ry="7" fill="#e5ffdc"/></g>
+            </g>
+            <g class="avatar-thought" fill="#d5f1cb"><circle cx="118" cy="36" r="2"/><circle cx="127" cy="29" r="2.7"/><circle cx="139" cy="25" r="3.3"/></g>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <main class="content-grid">
+      <section class="current-section" aria-labelledby="current-title">
+        <div class="section-heading"><h2 id="current-title">这次的结果</h2><span class="section-meta">留在这里，随时回看</span></div>
+        <div id="current-content"><article class="result-card empty-home"><span class="category">属于你的空间</span><h3>想做什么，直接说。</h3><p>找资料、做攻略、比较车次……<br>言小办会把查到的结果留在这里。</p><p id="load-message">正在读取你的历史记录。</p></article></div>
+        <p class="quiet-caption"><svg><use href="#i-check"/></svg><span id="save-status">结果已保存，回看时不会自动播报。</span></p>
+      </section>
+      <aside class="recent-section" aria-labelledby="recent-title">
+        <div class="section-heading"><h2 id="recent-title">最近留下的</h2><button class="subtle-button" id="all-results">全部<svg><use href="#i-arrow"/></svg></button></div>
+        <div id="recent-results"><p class="history-empty">正在读取…</p></div>
+        <div class="aside-note"><span class="note-index">言小办的默契</span><p>你说需求，<br>我把结果留下。</p><span>不用记住每一句话。</span><div class="decorative-mark" aria-hidden="true">言</div></div>
+      </aside>
+    </main>
+    <footer class="page-footer"><span>PI · 为一个人，做好每件事。</span><span>你的结果，只在连接的设备中查看</span></footer>
+  </div>
+
+  <div class="composer-wrap"><div class="composer" aria-label="对话控制">
+    <button class="composer-tool" id="keyboard-button" aria-label="输入文字"><svg><use href="#i-keyboard"/></svg></button>
+    <button class="voice-button" id="voice-button"><span class="mic-container"><svg><use href="#i-mic"/></svg><span class="mini-wave" aria-hidden="true"><i></i><i></i><i></i></span></span><span id="voice-label">开始说话</span><span class="voice-hint" id="voice-hint">我在这里</span></button>
+    <button class="composer-tool" id="history-button" aria-label="查看历史结果"><svg><use href="#i-history"/></svg></button>
+  </div><div class="voice-meter" id="voice-meter" hidden><progress id="level" max="100" value="0" aria-label="麦克风音量"></progress><button id="finish-button">说完了</button></div><p class="composer-caption" id="voice-status" role="status">准备好后，直接说。</p></div>
+
+  <dialog id="detail-dialog" class="sheet" aria-labelledby="detail-title"><div class="sheet-handle" aria-hidden="true"></div><header class="sheet-header"><div><span class="sheet-eyebrow" id="detail-eyebrow">结果详情</span><h2 id="detail-title">结果详情</h2></div><button class="icon-button close-dialog" aria-label="关闭详情"><svg><use href="#i-close"/></svg></button></header><div class="sheet-body" id="detail-body"></div></dialog>
+  <dialog id="input-dialog" class="sheet input-sheet" aria-labelledby="input-title"><div class="sheet-handle" aria-hidden="true"></div><header class="sheet-header"><div><span class="sheet-eyebrow">和言小办说</span><h2 id="input-title">把想法告诉我。</h2></div><button class="icon-button close-dialog" aria-label="关闭文字输入"><svg><use href="#i-close"/></svg></button></header><form id="message-form"><label for="message-input" id="input-context">写一句话就好，不需要固定格式。</label><textarea id="message-input" rows="3" placeholder="比如：把这三班都换成一等座比较" maxlength="500" required></textarea><div class="input-bottom"><span>会沿用当前对话的上下文</span><button type="submit" class="send-button" aria-label="发送"><svg><use href="#i-arrow"/></svg></button></div></form></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="home-motion-v047.js"></script>
+  <script src="endpoint-v037.js"></script>
+  <script src="presentation-v1.js?v=automatic-20261027"></script>
+  <script src="home-voice-v046.js?v=presentation-20261027"></script>
+  <script src="home-app-v050.js?v=automatic-20261027"></script>
+  <script src="features-v1.js?v=20261027"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "reviewed_on": "2026-11-03",
+  "scope": "Included source-package assets, not externally downloaded model/runtime binaries",
+  "resources": [
+    {
+      "path": "assets/yanxiaoban-icon.svg",
+      "sha256": "aaebcbca5cdf53ff0922b2be0e9a83b7beecde9a3507d86aec7d66e048086667",
+      "origin": "Project-authored geometric pi artwork, generated 2026-11-03; no fonts or external artwork",
+      "source": "assets/yanxiaoban-icon.svg",
+      "generator": "tools/render_icons.swift",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "独立服务/web_shared/yanxiaoban-touch.png",
+      "sha256": "1c875204adbf8f7f370a54b98ae22320f4b78ffdea1235903d92702cc0ea4c57",
+      "origin": "Project-authored geometric pi artwork, generated 2026-11-03; no fonts or external artwork",
+      "source": "assets/yanxiaoban-icon.svg",
+      "generator": "tools/render_icons.swift",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "独立服务/web_shared/yanxiaoban-favicon.png",
+      "sha256": "ebeb2e51abe28672f457312049aed45eeafb74250a604797fa5d8206a42fa238",
+      "origin": "Project-authored geometric pi artwork, generated 2026-11-03; no fonts or external artwork",
+      "source": "assets/yanxiaoban-icon.svg",
+      "generator": "tools/render_icons.swift",
+      "license": "GPL-3.0-only"
+    },
+    {
+      "path": "独立服务/web_shared/ready-v035.wav",
+      "sha256": "6b0c2e364d72de8ec28c6a1c5f9b8bb17c9d3a99f8c75506551017d9822c012f",
+      "origin": "Project-generated synthetic speech using the Qwen3-TTS CustomVoice Vivian preset",
+      "text": "我在，请说。",
+      "voice_cloned": false,
+      "source": "产品化/greeting-source.json",
+      "generation_parameters": "产品化/commercial-tts-source.json",
+      "model_license": "Apache-2.0",
+      "project_output_license": "GPL-3.0-only to the extent of project-held rights; no exclusive rights to preset voice or third-party model claimed",
+      "upstream": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+    },
+    {
+      "path": "独立服务/tests/flight-locations.fixture.json",
+      "sha256": "d71a36eef1df40bdbd4ef5f30ae50e3dfa48682f69bb87dc8b2a771a00291b10",
+      "origin": "Small test-only subset of Timeon1/TMC_Dataset, with city prefixes removed from airport labels",
+      "upstream": "https://github.com/Timeon1/TMC_Dataset",
+      "upstream_file": "citys-cn-code.json",
+      "retrieved_on": "2026-11-03",
+      "upstream_sha256": "a468914e5bd69d81da590b0d152f75f9e7d99cf76bf10cdec7a3d53480483c47",
+      "license": "MIT",
+      "license_file": "独立服务/tests/TMC-Dataset-LICENSE.txt",
+      "runtime_use": false
+    }
+  ],
+  "excluded_provider_data": {
+    "manifest": "产品化/flight-data-sources.json",
+    "public_redistribution_permission": "not established; excluded from source and default build",
+    "local_download_optional": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "text": "我在，请说。",
+  "speaker": "Vivian",
+  "backend": "qwen3",
+  "mlx_audio_version": "0.4.8",
+  "model_revision": "41d3337e8b7f2843a75841595fc14e4b9a7a4b96",
+  "sha256": "6b0c2e364d72de8ec28c6a1c5f9b8bb17c9d3a99f8c75506551017d9822c012f",
+  "synthetic": true,
+  "voice_cloned": false,
+  "original_model_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "model_license": "Apache-2.0",
+  "generation_parameters": "commercial-tts-source.json",
+  "project_output_terms": "See docs/ASSETS.md; project-held rights GPL-3.0-only, no exclusive rights to preset voice claimed",
+  "reviewed_on": "2026-11-03"
+}

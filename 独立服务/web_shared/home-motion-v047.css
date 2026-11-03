@@ -1,0 +1,141 @@
+@property --beam-angle {
+	syntax: "<angle>";
+	inherits: false;
+	initial-value: 0deg;
+}
+
+/* 通用脉冲光效工具类：元素需为定位上下文 */
+.result-card, .composer {
+	position: relative;
+	/* 呼吸外发光 — 蓝紫调(ocean)，呼应 Jarvis 主色 */
+	box-shadow:
+		0 0 0 1px rgba(10, 132, 255, 0.18),
+		0 0 18px 2px rgba(10, 132, 255, 0.22),
+		0 0 36px 6px rgba(94, 92, 230, 0.16);
+	animation: beam-breathe 4s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+
+/* 沿边流动光束：conic-gradient 被 mask 切出内边框，旋转出流动感 */
+.result-card::after, .composer::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	padding: 1.5px;
+	background: conic-gradient(
+		from var(--beam-angle),
+		transparent 0deg,
+		rgba(10, 132, 255, 0.9) 40deg,
+		rgba(94, 92, 230, 0.95) 90deg,
+		rgba(48, 209, 88, 0.85) 140deg,
+		transparent 200deg,
+		transparent 360deg
+	);
+	-webkit-mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask:
+		linear-gradient(#fff 0 0) content-box,
+		linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	pointer-events: none;
+	opacity: 0.9;
+	animation: beam-rotate 3.2s linear infinite;
+}
+
+@keyframes beam-rotate {
+	to {
+		--beam-angle: 360deg;
+	}
+}
+
+@keyframes beam-breathe {
+	0%,
+	100% {
+		box-shadow:
+			0 0 0 1px rgba(10, 132, 255, 0.14),
+			0 0 14px 1px rgba(10, 132, 255, 0.18),
+			0 0 28px 4px rgba(94, 92, 230, 0.12);
+	}
+	50% {
+		box-shadow:
+			0 0 0 1px rgba(10, 132, 255, 0.22),
+			0 0 24px 4px rgba(10, 132, 255, 0.3),
+			0 0 48px 10px rgba(94, 92, 230, 0.22);
+	}
+}
+
+
+.result-card { animation-duration: 5s; }
+.composer { animation-duration: 3.5s; }
+.result-card::after, .composer::after { z-index: 3; }
+body[data-motion-hidden='true'] *::before { animation-play-state: paused !important; }
+@media (prefers-reduced-motion: reduce) {
+  .result-card, .composer, .result-card::after, .composer::after { animation: none !important; }
+}
+
+/* Restore full perimeter over the existing glass top-edge highlight. */
+.result-card::after, .composer::after { inset: 0; width: auto; height: auto; }
+body[data-motion-hidden='true'] .result-card,
+body[data-motion-hidden='true'] .composer,
+body[data-motion-hidden='true'] .pi-avatar *,
+body[data-motion-hidden='true'] .result-card::after,
+body[data-motion-hidden='true'] .composer::after { animation-play-state: paused !important; }
+
+/* Small expressive companion, using Pi's original jade glass palette. */
+.presence > .orb, .presence > .orb-halo, .presence > .orb-orbit { display: none; }
+.pi-avatar { width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.pi-avatar .avatar-body { transform-origin: 80px 80px; animation: avatar-float 5s ease-in-out infinite; }
+.avatar-eyes { transform-origin: 80px 73px; animation: avatar-blink 5.8s infinite; }
+.avatar-face { transform-origin: 80px 80px; transition: transform .6s ease; }
+.avatar-eye { fill: #ecffe6; filter: drop-shadow(0 0 2px #dcffb840); }
+.avatar-eye-glint { fill: #fff; opacity: .65; }
+.avatar-mouth { fill: none; stroke: #ecffe6; stroke-width: 3; stroke-linecap: round; }
+.avatar-speaking-mouth, .avatar-happy-eyes, .avatar-thought { opacity: 0; }
+.avatar-idle-mouth, .avatar-open-eyes, .avatar-speaking-mouth, .avatar-happy-eyes, .avatar-thought { transition: opacity .25s ease; }
+.avatar-shadow { transform-origin: 80px 139px; animation: avatar-shadow 5s ease-in-out infinite; }
+body[data-voice='recording'] .avatar-body { animation: avatar-listen 3s ease-in-out infinite; }
+body[data-voice='recording'] .avatar-face { transform: translate(3px, -1px) rotate(-5deg); }
+body[data-voice='recording'] .avatar-eyes { animation-duration: 7s; }
+body[data-voice='processing'] .avatar-face { transform: translate(-3px,-4px) rotate(-7deg); }
+body[data-voice='processing'] .avatar-idle-mouth { transform: translate(-1px,-1px) scaleX(.85); transform-origin: 80px 94px; }
+body[data-voice='processing'] .avatar-thought { opacity: .8; }
+.avatar-thought circle { animation: avatar-think-dot 1.8s ease-in-out infinite; }
+.avatar-thought circle:nth-child(2) { animation-delay: .25s; }
+.avatar-thought circle:nth-child(3) { animation-delay: .5s; }
+body[data-voice='playing'] .avatar-body { animation: avatar-speaking 2.4s ease-in-out infinite; }
+body[data-voice='playing'] .avatar-open-eyes { animation: avatar-smile-eyes 4.2s infinite; }
+body[data-voice='playing'] .avatar-happy-eyes { animation: avatar-happy 4.2s infinite; }
+body[data-voice='playing'] .avatar-idle-mouth { opacity: 0; }
+body[data-voice='playing'] .avatar-speaking-mouth { opacity: 1; }
+body[data-voice='playing'] .avatar-talking-shape { animation: avatar-talk 1.15s ease-in-out infinite; transform-origin: 80px 95px; }
+@keyframes avatar-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes avatar-shadow { 0%,100% { transform: scaleX(1); opacity: .22; } 50% { transform: scaleX(.88); opacity: .15; } }
+@keyframes avatar-blink { 0%,42%,46%,81%,85%,100% { transform: scaleY(1); } 44%,83% { transform: scaleY(.09); } }
+@keyframes avatar-listen { 0%,100% { transform: rotate(-3deg) translateY(-1px); } 50% { transform: rotate(-6deg) translateY(-3px); } }
+@keyframes avatar-speaking { 0%,100% { transform: translateY(0) rotate(0deg); } 30% { transform: translateY(-2px) rotate(2deg); } 65% { transform: translateY(-1px) rotate(-2deg); } }
+@keyframes avatar-talk { 0%,100% { transform: scale(1,.3); } 18% { transform: scale(.9,1); } 35% { transform: scale(1.1,.48); } 53% { transform: scale(.85,.85); } 72% { transform: scale(1.08,.25); } 88% { transform: scale(.95,.68); } }
+@keyframes avatar-smile-eyes { 0%,60%,91%,100% { opacity: 1; } 66%,85% { opacity: 0; } }
+@keyframes avatar-happy { 0%,60%,91%,100% { opacity: 0; } 66%,85% { opacity: 1; } }
+@keyframes avatar-think-dot { 0%,100% { opacity: .25; } 40% { opacity: 1; } }
+@media(prefers-reduced-motion:reduce) {
+  .pi-avatar * { animation: none !important; transition: none !important; }
+  body[data-voice='playing'] .avatar-open-eyes { opacity: 0; }
+  body[data-voice='playing'] .avatar-happy-eyes { opacity: 1; }
+}
+
+/* Appearance only: keep every existing motion and voice-state transition intact. */
+.presence { width: 196px; height: 196px; flex-shrink: 0; margin-right: 8px; }
+.avatar-mouth { stroke-width: 3.5; }
+@media (max-width:680px) {
+  .welcome { gap: 8px; padding-top: 26px; padding-bottom: 28px; }
+  .welcome > div:first-child { flex: 1; min-width: 0; }
+  .welcome h1 { font-size: clamp(27px, 7.7vw, 34px); white-space: nowrap; }
+  .welcome-caption { max-width: 214px; }
+  .presence { width: 124px; height: 124px; margin-right: -8px; }
+}
+@media (max-width:374px) {
+  .presence { width: 110px; height: 110px; }
+  .welcome h1 { font-size: 26px; }
+}

@@ -1,0 +1,38 @@
+{
+  "airport": [
+    [
+      "SHA",
+      "虹桥国际机场"
+    ],
+    [
+      "PVG",
+      "浦东国际机场"
+    ],
+    [
+      "YUN",
+      "密云"
+    ],
+    [
+      "PEK",
+      "首都国际机场"
+    ],
+    [
+      "PKX",
+      "大兴国际机场"
+    ]
+  ],
+  "city": [
+    [
+      "SHA",
+      "上海"
+    ],
+    [
+      "BJS",
+      "北京"
+    ]
+  ],
+  "fixture_only": true,
+  "source": "https://github.com/Timeon1/TMC_Dataset/blob/master/citys-cn-code.json",
+  "license": "MIT",
+  "transform": "Select Beijing/Shanghai facts for synthetic offline tests; remove city prefixes from airport labels."
+}

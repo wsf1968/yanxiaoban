@@ -1,0 +1,20 @@
+Yanxiaoban / 言小办
+Copyright (C) 2026 Xiaopai contributors.
+Project public name adopted 2026-11-03: Yanxiaoban / 言小办.
+Original attribution is retained; this name change does not transfer copyright.
+
+The project-maintained program source and build/test scripts identified in
+LICENSE_SCOPE.json are licensed under GNU General Public License version 3
+only (SPDX-License-Identifier: GPL-3.0-only). You may use, modify, and
+redistribute them under that license. See LICENSE for the unmodified text.
+
+The program is provided without warranty to the extent permitted by applicable
+law. Separately agreed paid service commitments remain applicable.
+
+Third-party components retain their original copyright and license notices.
+In particular, the nanoMuse-derived files retain GPL-3.0-or-later.
+Third-party model weights and supplier data are not relicensed by this notice.
+Project-authored artwork and project-held rights in the synthetic greeting
+are provided under GPL-3.0-only. See docs/ASSETS.md, ASSET_PROVENANCE.json,
+THIRD_PARTY_NOTICES.md and docs/LICENSING.md for precise scope.
+This notice does not claim a registered trademark or third-party copyright.

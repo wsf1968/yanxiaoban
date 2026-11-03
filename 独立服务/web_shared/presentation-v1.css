@@ -1,0 +1,15 @@
+.presentation-block{min-width:0;margin:16px 0;overflow-wrap:anywhere}
+.presentation-trains{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px}
+.presentation-trains .selected-train{margin:0;min-width:0}
+.presentation-day,.presentation-agenda{padding:14px 16px;border-left:2px solid var(--sage,#74a690);background:rgba(116,166,144,.06);border-radius:0 12px 12px 0;margin:12px 0}
+.presentation-day h4,.presentation-agenda h4{margin:0 0 8px;font-size:16px}
+.presentation-agenda p{margin:6px 0;line-height:1.6}
+.presentation-table{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.presentation-table td{overflow-wrap:anywhere;min-width:76px}
+.presentation-totals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.presentation-totals p{margin:0;padding:10px;border:1px solid rgba(116,166,144,.2);border-radius:12px;font-size:13px}
+.presentation-totals strong{display:block;font-size:20px;margin-top:5px;font-variant-numeric:tabular-nums}
+.presentation-original{margin:18px 0 4px;border-top:1px solid rgba(116,166,144,.2);padding-top:12px}
+.presentation-original>summary{cursor:pointer;font-size:14px;min-height:36px;line-height:36px}
+.presentation-awaiting{font-size:13px;opacity:.7;line-height:1.6}
+@media(max-width:380px){.presentation-totals strong{font-size:17px}.presentation-agenda{padding:12px}}

@@ -1,0 +1,51 @@
+{
+  "source": "commercial product source only",
+  "release_type": "local source preparation; not published",
+  "changes": [
+    {
+      "scope": "personalization",
+      "description": "Replace developer greeting with generic text and stock synthetic greeting; retain configurable assistant and user names."
+    },
+    {
+      "scope": "private migration",
+      "description": "Remove old deployed-entry migration from macOS development entry."
+    },
+    {
+      "scope": "legacy transports",
+      "description": "Disable old personal shopping/research/WeChat network transports and implicit old speech-service fallback; keep commercial adapters and protocol helpers."
+    },
+    {
+      "scope": "isolation",
+      "description": "Separate preview app identifiers, login item, install directory and startup log directory."
+    },
+    {
+      "scope": "build inputs",
+      "description": "Use pinned public runtime/model metadata and checkout-local build cache; exclude model download cache metadata."
+    },
+    {
+      "scope": "claims",
+      "description": "Remove developer-specific JD approval assertion; actual per-user capability verification remains authoritative."
+    },
+    {
+      "scope": "tests",
+      "description": "Exclude private historical model trajectories and live paid/API acceptance scripts; explicitly skip the historical replay test."
+    },
+    {
+      "scope": "license",
+      "description": "Project-maintained code GPL-3.0-only; original third-party licenses preserved; services do not add software restrictions."
+    }
+  ],
+  "business_decisions": "No replacement of model decisions with hardcoded recommendations or rankings.",
+  "not_included": [
+    "credentials",
+    "private databases",
+    "personal memories",
+    "account histories",
+    "Git history",
+    "private keys",
+    "runtime binaries",
+    "model weights",
+    "internal audit reports",
+    "demo video"
+  ]
+}

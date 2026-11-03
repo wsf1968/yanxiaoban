@@ -1,0 +1,35 @@
+# All generated dependencies, credentials, sessions and build outputs stay local.
+.env
+.env.*
+!.env.example
+.private/
+.build/
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+*.db
+*.db-*
+*.sqlite*
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileconfig
+*.onnx
+*.safetensors
+*.bin
+*.app/
+*.dmg
+*.zip
+*.tar.gz
+*.tar.bz2
+.DS_Store
+dist/
+coverage/
+
+# Supplier reference tables are local build inputs, never public source.
+独立服务/data/flight-locations.json
+*.xlsx

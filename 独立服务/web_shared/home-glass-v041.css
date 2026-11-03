@@ -1,0 +1,185 @@
+/* Glass treatment: opaque text, restrained reflections, no sensors or JS effects. */
+:root {
+  --glass-edge: rgba(218, 248, 220, .19);
+  --glass-shadow: 0 18px 48px #020c082b, inset 0 1px 0 #eeffe118;
+}
+body {
+  background-color: #0e1816;
+  background-image:
+    radial-gradient(ellipse at 87% 14%, #7497764a, transparent 37%),
+    radial-gradient(ellipse at 6% 47%, #608b7340, transparent 43%),
+    radial-gradient(ellipse at 72% 95%, #8c865225, transparent 36%);
+  background-repeat: no-repeat;
+  background-size: 100% 1100px;
+}
+.brand-mark {
+  background: linear-gradient(140deg, #d8f5c925, #a3d1b20c 55%, #b8edd51a);
+  border-color: #ceeccf40;
+  box-shadow: inset 0 1px 0 #f4ffe833, inset 0 -1px 0 #0005, 0 5px 16px #0002;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.preview-label {
+  background: #d6ecd808;
+  border-color: #d3f4d224;
+  box-shadow: inset 0 1px #ffffff0a;
+}
+.result-card, .saved-card {
+  background:
+    linear-gradient(140deg, #ddf4d614, #e2ffe003 42%, #bee9dc09),
+    #1a2b22c4;
+  border: 1px solid var(--glass-edge);
+  -webkit-backdrop-filter: blur(20px) saturate(135%);
+  backdrop-filter: blur(20px) saturate(135%);
+  box-shadow: var(--glass-shadow);
+  position: relative;
+  isolation: isolate;
+}
+.result-card::before, .saved-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+  background: linear-gradient(118deg, #f4ffe908, transparent 32%, transparent 80%, #e4fff404);
+  box-shadow: inset 1px 0 0 #efffe90c, inset 0 -1px 0 #0002;
+}
+.result-card::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #f0ffda80 30%, #d6ffee25 72%, transparent);
+}
+.selected-train {
+  background: linear-gradient(135deg, #e9ffe20e, #bfe7c207 60%, #8cd7ab0c);
+  border-color: #c7eebc4a;
+  box-shadow: inset 0 1px 0 #e7ffdc16, inset 0 -1px 0 #0002, 0 5px 18px #04130b12;
+}
+.card-actions { border-top-color: #cae4c51c; }
+.fare-row { border-top-color: #ccefc422; }
+.secondary-button {
+  background: linear-gradient(150deg, #e9ffdc12, #d6ffd307);
+  border-color: #d5efcf2e;
+  box-shadow: inset 0 1px #f5ffea12, 0 3px 8px #0000000d;
+}
+.saved-icon {
+  background-image: linear-gradient(140deg, #efffed10, #ffffff00);
+  border: 1px solid #e0f3d812;
+  box-shadow: inset 0 1px #ffffff0c;
+}
+.orb {
+  background:
+    radial-gradient(ellipse at 31% 17%, #f0ffdea6, transparent 27%),
+    radial-gradient(circle at 67% 80%, #98ddbd57, transparent 47%),
+    radial-gradient(circle at 35% 27%, #a8dca7, #4d8368 35%, #274b3f 66%, #7da890);
+  border: 1px solid #e2ffd880;
+  box-shadow:
+    inset 2px 3px 5px #f1ffe680,
+    inset -3px -4px 8px #05160c8a,
+    inset -5px -1px 5px #c1fadc30,
+    0 0 34px #a5e3a21f,
+    0 20px 35px #0004;
+}
+.orb::after {
+  content: "";
+  position: absolute;
+  width: 61%;
+  height: 30%;
+  top: 7%;
+  left: 17%;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  background: linear-gradient(180deg, #efffe760, #ffffff00);
+  pointer-events: none;
+}
+.orb-core { border-color: #e3ffdf5e; }
+.orb-orbit { border-color: #d3edc533; }
+.composer-wrap {
+  background: linear-gradient(0deg, #0e1816d9, #0e181647 65%, transparent);
+}
+.composer {
+  background: linear-gradient(125deg, #d5f4d524, #cbeedd0c 45%, #ecffd919), #20372d80;
+  border-color: #e3f5d84d;
+  -webkit-backdrop-filter: blur(32px) saturate(160%);
+  backdrop-filter: blur(32px) saturate(160%);
+  box-shadow:
+    inset 0 1px 0 #f5ffe95e,
+    inset 1px 0 0 #efffef1f,
+    inset 0 -1px 0 #1b352e77,
+    0 14px 44px #0006,
+    0 2px 5px #0003;
+}
+.voice-button {
+  background: linear-gradient(160deg, #e4f9cd, #b8eac0 44%, #a0d9b1);
+  box-shadow: inset 0 1px 0 #ffffe6c9, inset 0 -1px 0 #598e675e, 0 3px 12px #031e1833;
+}
+.composer-tool { color: #e1edda; }
+.sheet {
+  background: linear-gradient(135deg, #dfefd510, #d5fce808 50%, #fff1c105), #182b23ed;
+  border-color: #e0f2cf42;
+  -webkit-backdrop-filter: blur(30px) saturate(135%);
+  backdrop-filter: blur(30px) saturate(135%);
+  box-shadow: inset 0 1px 0 #f3ffe14d, 0 25px 100px #0008;
+}
+.sheet::backdrop {
+  background: #04110b87;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+}
+.sheet-header {
+  background: #1e3128e8;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid #d5efd008;
+  margin-bottom: 12px;
+}
+.detail-hero, .receipt {
+  background: linear-gradient(130deg, #d0eab317, #c5f1d207);
+  border-color: #d4ecc433;
+  box-shadow: inset 0 1px #f5ffe71a;
+}
+.toast {
+  background: #e5efdcf5;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid #f5ffec;
+}
+@media (hover:hover) and (pointer:fine) {
+  .saved-card:hover {
+    background: linear-gradient(130deg, #e2fadd21, #caefd809), #223b2bde;
+    border-color: #d9f3cb5c;
+    transform: translateY(-2px);
+    box-shadow: inset 0 1px #f4ffe12e, 0 22px 45px #0003;
+  }
+  .secondary-button:hover, .composer-tool:hover { background: #e0ffdc1c; }
+  .voice-button:hover { background: linear-gradient(160deg, #ecffdd, #c7f2ca 50%, #b0e3bb); }
+}
+@media (max-width:680px) {
+  body { background-size: 100% 1150px; }
+  .result-card, .saved-card {
+    -webkit-backdrop-filter: blur(14px) saturate(125%);
+    backdrop-filter: blur(14px) saturate(125%);
+  }
+  .composer { border-radius: 25px; }
+  .voice-button { border-radius: 18px; }
+  .sheet { background-color: #182b23f2; }
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
+  .result-card, .saved-card { background-color: #203329; }
+  .composer { background-color: #2d4537; }
+  .sheet, .sheet-header { background-color: #203329; }
+}
+@media (prefers-reduced-transparency:reduce) {
+  .result-card, .saved-card, .composer, .sheet, .sheet-header, .toast, .brand-mark {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: #243a2d;
+  }
+  .toast { background-color: #e5efdc; }
+  .sheet::backdrop { -webkit-backdrop-filter:none; backdrop-filter:none; background:#06110be8; }
+}

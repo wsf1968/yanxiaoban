@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-03",
+  "version": "0.4.1-preview.5",
+  "status": "passed_for_source_preview_build_and_local_account_free_install",
+  "environment": {
+    "macos": "27.2",
+    "architecture": "arm64",
+    "isolation": "new empty source/build/install directories on the current Mac; not a new OS user or another Mac"
+  },
+  "source_build": {
+    "portable_python_downloaded": true,
+    "portable_node_downloaded": true,
+    "python_dependencies_installed_with_cache_disabled": true,
+    "node_dependencies_installed_with_empty_config_and_isolated_cache": true,
+    "speech_models_downloaded_and_sha256_verified": true,
+    "original_commercial_runtimes_reused": false,
+    "complete_app_built": true,
+    "payload_files": 27720,
+    "payload_bytes": 4264225261,
+    "built_source_fingerprints_match_this_source": true
+  },
+  "install": {
+    "signed_manifest_verified": true,
+    "isolated_install_succeeded": true,
+    "relocated_dependencies_imported": true,
+    "installer_page_http": 200,
+    "unauthenticated_api_denied": true,
+    "authenticated_api_passed": true,
+    "ad_hoc_codesign_deep_strict_verified": true,
+    "developer_id_notarized": false
+  },
+  "local_speech": {
+    "backend": "qwen3",
+    "tts_sample_rate": 24000,
+    "tts_duration": 2.0,
+    "asr_text": "我在请说",
+    "source": "freshly built and relocated installed bundle",
+    "microphone_used": false,
+    "api_called": false,
+    "tested_artifact_version": "0.4.1-preview.2; runtime source unchanged in preview.3"
+  },
+  "tests": {
+    "passed": 311,
+    "skipped": 1,
+    "failed": 0,
+    "python_groups": [
+      {
+        "group": "service",
+        "tests": 179,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "installer",
+        "tests": 39,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "secretary",
+        "tests": 32,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "bookkeeping",
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "clean",
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      }
+    ],
+    "node": {
+      "tests": 41,
+      "pass": 41,
+      "fail": 0,
+      "skipped": 0
+    },
+    "runtime": "Independently downloaded Python/Node and dependencies; no live configuration or API"
+  },
+  "fixes": [
+    "Disable pip shared download cache; isolate npm cache and configuration.",
+    "Use official npm registry URLs with unchanged lockfile integrity values.",
+    "Document building with the newly downloaded Python instead of relying on system Python packages."
+  ],
+  "not_verified": [
+    "new Mac or new OS user installation",
+    "iPhone pairing and physical microphone/playback",
+    "real model and paid supplier API queries",
+    "family dual-phone use",
+    "Apple Developer ID distribution and notarization"
+  ],
+  "expected_unconfigured_state": "The account-free installation reports service_not_running and model_connection_not_verified. No credential or fictitious success state was inserted.",
+  "personal_project_changed": false,
+  "original_commercial_code_changed": false,
+  "live_services_changed": false,
+  "paid_flight_calls": 0,
+  "project_license": "GPL-3.0-only",
+  "license_finalized_after_runtime_verification": "2026-11-03; preview.3 licensing baseline, preview.4 asset/data boundary reviewed and rebuilt",
+  "licensed_build": {
+    "version": "0.4.1-preview.5",
+    "signed_manifest_verified": true,
+    "project_license_included": true,
+    "runtime_files_unchanged_from_tested_preview2": 4940,
+    "full_phone_tested": false,
+    "notarized": false,
+    "note": "4940 unchanged count refers to preview.3 vs preview.2 historical comparison, not preview.4"
+  },
+  "source_publication_review": "RELEASE_REVIEW.json",
+  "current_relevant_regression_tests": {
+    "passed": 311,
+    "skipped": 1,
+    "failed": 0
+  },
+  "current_default_bundle_excludes_supplier_table": true,
+  "current_build_install_verified": true,
+  "public_project_name": "Yanxiaoban / 言小办",
+  "naming_verification": "Default UI name, saved default, custom nickname, native app path and isolated login-item management passed",
+  "published_to_github_at_review": false,
+  "publication_repository": "https://github.com/wsf1968/yanxiaoban"
+}

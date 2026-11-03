@@ -1,0 +1,35 @@
+{
+  "Qwen3-TTS_Apache-2.0.txt": {
+    "url": "https://raw.githubusercontent.com/QwenLM/Qwen3-TTS/main/LICENSE",
+    "sha256": "a44a6081c73ad75f0255bb2bb5cab74ef1829565a895a24e53a4f11290ab7655",
+    "license": "Apache-2.0"
+  },
+  "mlx_audio_MIT.txt": {
+    "url": "https://github.com/Blaizzy/mlx-audio/blob/main/LICENSE",
+    "package": "mlx_audio",
+    "version": "0.4.8",
+    "sha256": "11d27e0259dec3a323fa6c04c330621d0950ab96c6760d5aac3e2e97229e6f22",
+    "license": "MIT"
+  },
+  "mlx_MIT.txt": {
+    "url": "https://github.com/ml-explore/mlx/blob/main/LICENSE",
+    "package": "mlx",
+    "version": "0.32.0",
+    "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+    "license": "MIT"
+  },
+  "mlx_metal_MIT.txt": {
+    "url": "https://github.com/ml-explore/mlx/blob/main/LICENSE",
+    "package": "mlx_metal",
+    "version": "0.32.0",
+    "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+    "license": "MIT"
+  },
+  "mlx_lm_MIT.txt": {
+    "url": "https://github.com/ml-explore/mlx-lm/blob/main/LICENSE",
+    "package": "mlx_lm",
+    "version": "0.31.3",
+    "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+    "license": "MIT"
+  }
+}

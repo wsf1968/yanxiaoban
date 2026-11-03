@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@actual-app/api": "26.10.0",
+    "proper-lockfile": "4.1.2"
+  },
+  "name": "xiaopai-bookkeeping-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Isolated Actual Budget adapter for DS-controlled personal and family bookkeeping",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs"
+  }
+}

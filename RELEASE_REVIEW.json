@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-03",
+  "scope": "GitHub source preview, not a public prebuilt installer release",
+  "ready_for_source_publication": true,
+  "project_license": "GPL-3.0-only",
+  "resources": {
+    "project_icons": "replaced with project-authored SVG and generated PNG, source supplied",
+    "generic_greeting": "generation provenance, preset speaker and hash verified",
+    "supplier_location_tables": "excluded from source and default bundle; optional pinned local download only",
+    "test_location_fixture": "small MIT-licensed subset, excluded from runtime bundle"
+  },
+  "current_regression_tests": {
+    "passed": 311,
+    "skipped": 1,
+    "failed": 0,
+    "python_groups": [
+      {
+        "group": "service",
+        "tests": 179,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "installer",
+        "tests": 39,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "secretary",
+        "tests": 32,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "bookkeeping",
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      },
+      {
+        "group": "clean",
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "python_outbound_network": "blocked"
+      }
+    ],
+    "node_passed": 41,
+    "paid_api_calls": 0
+  },
+  "earlier_full_validation": {
+    "passed": 305,
+    "skipped_private_trace": 1,
+    "note": "Historical baseline before asset and naming updates; latest complete rerun is recorded under current_regression_tests."
+  },
+  "build": {
+    "version": "0.4.1-preview.5",
+    "payload_files": 27720,
+    "source_fingerprints_match": true,
+    "ad_hoc_codesign_deep_strict_verified": true,
+    "signed_manifest_verified": true,
+    "isolated_install_verified": true,
+    "optional_supplier_table_included": false,
+    "speech_models_and_runtimes_unchanged": true,
+    "phone_tested": false,
+    "notarized": false,
+    "payload_bytes": 4264225261,
+    "default_name_and_custom_nickname_verified": true,
+    "native_component_name_and_path_verified": true
+  },
+  "provider_data_equivalence": {
+    "airport_rows": 4168,
+    "city_rows": 8728,
+    "airport_values_and_order_unchanged": true,
+    "city_values_and_order_unchanged": true,
+    "paid_api_calls": 0
+  },
+  "original_source_protection": {
+    "original_files_compared": 202,
+    "original_changed_files": [],
+    "personal_project_mutated": false,
+    "live_services_changed": false
+  },
+  "remaining_outside_source_preview_scope": [
+    "new Mac or new OS user first install",
+    "iPhone physical pairing and voice/end-to-end permission tests",
+    "real model and supplier API validation",
+    "Apple Developer ID signing and notarization",
+    "complete third-party binary/model redistribution review before any public installer release"
+  ],
+  "project": {
+    "approved_on": "2026-11-03",
+    "name_zh": "言小办",
+    "name_en": "Yanxiaoban",
+    "repository_name": "yanxiaoban",
+    "description": "开源个人语音助手",
+    "tagline": "用说话的方式，处理日常事务。",
+    "scope": "Independent open-source project only; personal and original commercial installations unchanged",
+    "internal_module_identifiers_retained": true,
+    "own_install_directory": "~/Library/Application Support/言小办开源预览",
+    "own_bundle_identifier_prefix": "org.yanxiaoban.preview",
+    "custom_assistant_nickname_preserved": true,
+    "registered_trademark_claimed": false
+  },
+  "rename_checks": {
+    "all_user_facing_web_brand_strings_updated": true,
+    "login_item_only_controls_own_installation": true,
+    "source_fingerprints_match_built_bundle": true,
+    "copyright_attribution_retained": true
+  },
+  "published_to_github_at_review": false,
+  "publication_repository": "https://github.com/wsf1968/yanxiaoban"
+}

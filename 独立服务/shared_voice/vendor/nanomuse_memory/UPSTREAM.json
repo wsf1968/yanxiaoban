@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/nano-muse/nanoMuse",
+  "commit": "4ba855cf1fbed336e02b12566fef19bac5ce65d7",
+  "license": "GPL-3.0-or-later",
+  "files": {
+    "store.py": {
+      "upstream_path": "nanomuse/memory/store.py",
+      "upstream_sha256": "a4c199262b3aaa5cd81523a3ab1ff47fcbd3a4a260cfac04677f1882088c9088"
+    },
+    "consolidate.py": {
+      "upstream_path": "nanomuse/memory/consolidate.py",
+      "upstream_sha256": "1dfa3bda48fc9d0b3579da67783ca51b53f4b8194731debe4b2007c1d4e93bf8"
+    }
+  },
+  "port_changes": [
+    "consolidate imports use a tiny local message/LLM protocol shim; no nanoMuse app runtime",
+    "oversized or unknown-id model edits are rejected rather than silently cropped",
+    "tidy model input includes precise created/updated timestamps; application preserves source and transactional owner isolation"
+  ]
+}

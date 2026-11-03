@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xiaopai-secretary-preintegration"
+version = "0.1.0"
+description = "Isolated secretary workflow and execution journal; native adapter not enabled"
+requires-python = ">=3.11"
+dependencies = ["jsonschema==4.26.0"]
+
+[tool.setuptools.package-data]
+xiaopai_secretary = ["resources/*.txt", "resources/*.json"]
+
+[tool.setuptools.packages.find]
+include = ["xiaopai_secretary*"]

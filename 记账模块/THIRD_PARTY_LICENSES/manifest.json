@@ -1,0 +1,429 @@
+[
+  {
+    "name": "chevrotain",
+    "version": "6.5.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/SAP/chevrotain.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/chevrotain/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "xml2js",
+    "version": "0.6.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Leonidas-from-XIV/node-xml2js.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/xml2js/LICENSE"
+    ]
+  },
+  {
+    "name": "node-addon-api",
+    "version": "8.9.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/nodejs/node-addon-api.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/node-addon-api/LICENSE.md"
+    ]
+  },
+  {
+    "name": "wordwrap",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/substack/node-wordwrap.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/wordwrap/LICENSE"
+    ]
+  },
+  {
+    "name": "lru-cache",
+    "version": "11.5.3",
+    "license": "BlueOak-1.0.0",
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/isaacs/node-lru-cache.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/lru-cache/LICENSE.md"
+    ]
+  },
+  {
+    "name": "murmurhash",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/perezd/node-murmurhash.git"
+    }
+  },
+  {
+    "name": "retry",
+    "version": "0.12.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/tim-kos/node-retry.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/retry/License"
+    ]
+  },
+  {
+    "name": "csv-parse",
+    "version": "7.0.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/adaltas/node-csv.git",
+      "directory": "packages/csv-parse"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/csv-parse/LICENSE"
+    ]
+  },
+  {
+    "name": "sax",
+    "version": "1.6.1",
+    "license": "BlueOak-1.0.0",
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/isaacs/sax-js.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/sax/LICENSE.md"
+    ]
+  },
+  {
+    "name": "signal-exit",
+    "version": "3.0.7",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/tapjs/signal-exit.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/signal-exit/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "es-toolkit",
+    "version": "1.53.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/toss/es-toolkit.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/es-toolkit/LICENSE",
+      "THIRD_PARTY_LICENSES/es-toolkit/NOTICE"
+    ]
+  },
+  {
+    "name": "compare-versions",
+    "version": "6.1.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/omichelsen/compare-versions.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/compare-versions/LICENSE"
+    ]
+  },
+  {
+    "name": "xmlbuilder",
+    "version": "11.0.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/oozcitak/xmlbuilder-js.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/xmlbuilder/LICENSE"
+    ]
+  },
+  {
+    "name": "date-fns",
+    "version": "4.4.0",
+    "license": "MIT",
+    "repository": "https://github.com/date-fns/date-fns",
+    "license_files": [
+      "THIRD_PARTY_LICENSES/date-fns/LICENSE.md"
+    ]
+  },
+  {
+    "name": "proper-lockfile",
+    "version": "4.1.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:moxystudio/node-proper-lockfile.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/proper-lockfile/LICENSE"
+    ]
+  },
+  {
+    "name": "minimist",
+    "version": "1.2.8",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/minimistjs/minimist.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/minimist/LICENSE"
+    ]
+  },
+  {
+    "name": "tiny-emitter",
+    "version": "2.1.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/scottcorgan/tiny-emitter.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/tiny-emitter/LICENSE"
+    ]
+  },
+  {
+    "name": "absurd-sql",
+    "version": "0.0.54",
+    "license": null,
+    "repository": null,
+    "license_files": [
+      "THIRD_PARTY_LICENSES/absurd-sql/LICENSE"
+    ]
+  },
+  {
+    "name": "better-sqlite3",
+    "version": "13.0.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/WiseLibs/better-sqlite3.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/better-sqlite3/LICENSE"
+    ]
+  },
+  {
+    "name": "handlebars",
+    "version": "4.7.10",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/handlebars-lang/handlebars.js.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/handlebars/LICENSE"
+    ]
+  },
+  {
+    "name": "csv-stringify",
+    "version": "6.9.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/adaltas/node-csv.git",
+      "directory": "packages/csv-stringify"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/csv-stringify/LICENSE"
+    ]
+  },
+  {
+    "name": "regexp-to-ast",
+    "version": "0.4.0",
+    "license": "MIT",
+    "repository": "https://github.com/bd82/regexp-to-ast.git",
+    "license_files": [
+      "THIRD_PARTY_LICENSES/regexp-to-ast/LICENSE"
+    ]
+  },
+  {
+    "name": "neo-async",
+    "version": "2.6.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:suguru03/neo-async.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/neo-async/LICENSE"
+    ]
+  },
+  {
+    "name": "source-map",
+    "version": "0.6.1",
+    "license": "BSD-3-Clause",
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/mozilla/source-map.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/source-map/LICENSE"
+    ]
+  },
+  {
+    "name": "uglify-js",
+    "version": "3.19.3",
+    "license": "BSD-2-Clause",
+    "repository": "mishoo/UglifyJS",
+    "license_files": [
+      "THIRD_PARTY_LICENSES/uglify-js/LICENSE"
+    ]
+  },
+  {
+    "name": "safari-14-idb-fix",
+    "version": "1.0.6",
+    "license": "Apache-2.0",
+    "repository": null,
+    "license_files": [
+      "THIRD_PARTY_LICENSES/safari-14-idb-fix/LICENSE"
+    ]
+  },
+  {
+    "name": "uuid",
+    "version": "14.0.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/uuidjs/uuid.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/uuid/LICENSE.md"
+    ]
+  },
+  {
+    "name": "graceful-fs",
+    "version": "4.2.11",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/isaacs/node-graceful-fs"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/graceful-fs/LICENSE"
+    ]
+  },
+  {
+    "name": "fflate",
+    "version": "0.8.3",
+    "license": "MIT",
+    "repository": "https://github.com/101arrowz/fflate",
+    "license_files": [
+      "THIRD_PARTY_LICENSES/fflate/LICENSE"
+    ]
+  },
+  {
+    "name": "hyperformula",
+    "version": "3.5.0",
+    "license": "GPL-3.0-only",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/handsontable/hyperformula.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/hyperformula/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "mitt",
+    "version": "3.0.1",
+    "license": "MIT",
+    "repository": "developit/mitt",
+    "license_files": [
+      "THIRD_PARTY_LICENSES/mitt/LICENSE"
+    ]
+  },
+  {
+    "name": "@rschedule/core",
+    "version": "1.5.0",
+    "license": "Unlicense",
+    "repository": {
+      "type": "git",
+      "url": "https://gitlab.com/john.carroll.p/rschedule.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/@rschedule_core/LICENSE"
+    ]
+  },
+  {
+    "name": "@rschedule/standard-date-adapter",
+    "version": "1.5.0",
+    "license": "Unlicense",
+    "repository": {
+      "type": "git",
+      "url": "https://gitlab.com/john.carroll.p/rschedule.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/@rschedule_standard-date-adapter/LICENSE"
+    ]
+  },
+  {
+    "name": "@actual-app/crdt",
+    "version": "3.1.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/actualbudget/actual.git",
+      "directory": "packages/crdt"
+    }
+  },
+  {
+    "name": "@actual-app/core",
+    "version": "26.10.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/actualbudget/actual.git",
+      "directory": "packages/loot-core"
+    }
+  },
+  {
+    "name": "@actual-app/api",
+    "version": "26.10.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/actualbudget/actual.git",
+      "directory": "packages/api"
+    }
+  },
+  {
+    "name": "@bufbuild/protobuf",
+    "version": "2.16.0",
+    "license": "(Apache-2.0 AND BSD-3-Clause)",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bufbuild/protobuf-es.git",
+      "directory": "packages/protobuf"
+    }
+  },
+  {
+    "name": "@jlongster/sql.js",
+    "version": "1.6.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/sql-js/sql.js.git"
+    },
+    "license_files": [
+      "THIRD_PARTY_LICENSES/@jlongster_sql.js/LICENSE"
+    ]
+  }
+]
